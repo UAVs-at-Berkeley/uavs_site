@@ -9,8 +9,8 @@
 title: UAVs@Berkeley
 email: admin@uav.berkeley.edu
 description: UAVs@Berkeley student organization on campus at Cal.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://uavs-at-berkeley.github.io" # the base hostname & protocol for your site
 
 # Logo settings
 logo-image-url: images/logo.svg
