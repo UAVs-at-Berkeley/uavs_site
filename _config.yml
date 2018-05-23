@@ -26,11 +26,11 @@ logo: "/assets/logo.png"
 markdown: kramdown
 
 # Social media links
-facebook: https://facebook.com/ucjazz/
-youtube: https://www.youtube.com/channel/UCCU3aQp9KnJH8DFwLNzwqbw
-linkedin: https://linkedin.com
-instagram: https://instagram.com
-twitter: https://twitter.com
+facebook: https://www.facebook.com/UAVsAtBerkeley/
+youtube: https://www.youtube.com/channel/UCdf9B_VJczebLHh9TooNBdA
+linkedin: https://www.linkedin.com/company/uavsatberkeley/
+instagram: https://www.instagram.com/uavsatberkeley/
+twitter: https://twitter.com/uavsatberkeley?lang=en
 email: admin@uav.berkeley.edu
 
 # Google analytics
