@@ -1,37 +1,31 @@
-<!-- footer Start -->
-<footer>
+</div>
+</div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          
-          <ul class="social-icons">
-          
-            <li>
-              <a href={{site.email}} target="_blank"><i class="fa fa-envelope-o"></i></a>
-            </li>
-            <li>
-              <a href={{site.facebook}} target="_blank"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href={{site.youtube}} target="_blank"><i class="fa fa-youtube"></i></a>
-            </li>
-            <li>
-              <a href={{site.linkedin}} target="_blank"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href={{site.instagram}} target="_blank"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href={{site.twitter}} target="_blank"><i class="fa fa-twitter"></i></a>
-            </li>
-            
-          </ul>
-        </div>
-        <p>&copy; {% assign thisyear = site.time | date: "%Y" %}
-    {{ thisyear }} UAVs@Berkeley | Based on a design by <a href="http://www.themefisher.com" target="_blank">Themefisher</a>.</p>
-      </div>
-    </div>
-  </div>
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<ul class="icons">
+				<li><a target="_blank" href="{{ site.facebook }}" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a target="_blank" href="{{ site.youtube }}" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a target="_blank" href="{{ site.instagram }}" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a target="_blank" href="{{ site.twitter }}" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a target="_blank" href="{{ site.github }}" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a target="_blank" href="{{ site.linkedin }}" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a target="_blank" href="mailto:{{ site.email }}" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</section>
+		<ul class="copyright">
+			<li>&copy; {% assign thisyear = site.time | date: "%Y" %}{{ thisyear }} {{ site.title }}</li>
+			<li>Based on a design by <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+			<li>Hosted by the <a target="_blank" href="https://www.ocf.berkeley.edu/">OCF</a></li>
+		</ul>
+	</div>
 </footer>
+
+<!-- Scripts -->
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/skel.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="{{ site.url }}{{ site.baseurl }}/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
