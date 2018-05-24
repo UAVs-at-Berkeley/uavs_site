@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-Check eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsuit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+Check eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsuit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pewdijllentesque enim turpis, hendrerit tristique.
 
 ## Spring 2018
 <hr>
@@ -18,9 +18,4 @@ Check eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibu
 ## Spring 2017
 <hr>
 {% include tiles_sp17.html %}	
-<br/>
-
-## Fall 2016
-<hr>
-{% include tiles_fa16.html %}	
 <br/>

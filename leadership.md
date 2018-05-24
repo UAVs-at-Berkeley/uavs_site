@@ -8,33 +8,33 @@ Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibu
 <div class="box alt">
 	<div class="row uniform">
 		<div class="4u">
-			<span class="image fit"><img src="images/trey.jpg" alt="" /></span>
-			<h2>Trey Fortmuller</h2>
+			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
+			<h2>headshots/trey Fortmuller</h2>
 			<p>President | Engineering Physics C'19</p>
 		</div>
 		<div class="4u">
-			<span class="image fit"><img src="images/trey.jpg" alt="" /></span>
-			<h2>Trey Fortmuller</h2>
+			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
+			<h2>headshots/trey Fortmuller</h2>
 			<p>President | Engineering Physics C'19</p>
 		</div>
 		<div class="4u">
-			<span class="image fit"><img src="images/trey.jpg" alt="" /></span>
-			<h2>Trey Fortmuller</h2>
+			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
+			<h2>headshots/trey Fortmuller</h2>
 			<p>President | Engineering Physics C'19</p>
 		</div>
 		<div class="4u">
-			<span class="image fit"><img src="images/trey.jpg" alt="" /></span>
-			<h2>Trey Fortmuller</h2>
+			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
+			<h2>headshots/trey Fortmuller</h2>
 			<p>President | Engineering Physics C'19</p>
 		</div>
 		<div class="4u">
-			<span class="image fit"><img src="images/trey.jpg" alt="" /></span>
-			<h2>Trey Fortmuller</h2>
+			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
+			<h2>headshots/trey Fortmuller</h2>
 			<p>President | Engineering Physics C'19</p>
 		</div>
 		<div class="4u">
-			<span class="image fit"><img src="images/trey.jpg" alt="" /></span>
-			<h2>Trey Fortmuller</h2>
+			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
+			<h2>headshots/trey Fortmuller</h2>
 			<p>President | Engineering Physics C'19</p>
 		</div>
 	</div>
