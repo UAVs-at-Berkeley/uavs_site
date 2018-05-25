@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-Check eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsuit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pewdijllentesque enim turpis, hendrerit tristique.
+Our teams work hard on their projects. Innovating in the space of aerial robotics is our passion, but documenting and communicating our work is just as important as the tech itself. Listed below are the blog posts that project managers write after each semester to reflect on their project. The blog posts discuss the successes and the failures of each team, and serve as an archive for passing knowledge down to later generations of club members.
 
 ## Spring 2018
 <hr>

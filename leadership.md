@@ -3,39 +3,119 @@ layout: page
 title: Leadership
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorship and funding, communicates with UC Berkeley administration, plans events, and more. Each member of the team dedicates hundreds of hours each semester to making UAVs@Berkeley what it is. 
 
-<div class="box alt">
-	<div class="row uniform">
-		<div class="4u">
-			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
-			<h2>headshots/trey Fortmuller</h2>
-			<p>President | Engineering Physics C'19</p>
-		</div>
-		<div class="4u">
-			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
-			<h2>headshots/trey Fortmuller</h2>
-			<p>President | Engineering Physics C'19</p>
-		</div>
-		<div class="4u">
-			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
-			<h2>headshots/trey Fortmuller</h2>
-			<p>President | Engineering Physics C'19</p>
-		</div>
-		<div class="4u">
-			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
-			<h2>headshots/trey Fortmuller</h2>
-			<p>President | Engineering Physics C'19</p>
-		</div>
-		<div class="4u">
-			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
-			<h2>headshots/trey Fortmuller</h2>
-			<p>President | Engineering Physics C'19</p>
-		</div>
-		<div class="4u">
-			<span class="image fit"><img src="images/headshots/trey.jpg" alt="" /></span>
-			<h2>headshots/trey Fortmuller</h2>
-			<p>President | Engineering Physics C'19</p>
-		</div>
-	</div>
-</div>
+## Executive Board
+<hr>
+
+<section class="people">
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/trey.jpg" alt="" />
+		</span>
+		<h3>Trey Fortmuller</h3>
+		<p>President | Engineering Physics C'19</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>Ryan Park</h3>
+		<p>Vice President | Economics C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>Andre Askarinam</h3>
+		<p>Director of PR | EECS C'18</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>David Dominguez Hooper</h3>
+		<p>Senior Advisor | EECS C'18</p>
+	</article>
+</section>
+
+<br>
+
+## Officers
+<hr>
+
+<section class="people">
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/trey.jpg" alt="" />
+		</span>
+		<h3>Trey Fortmuller</h3>
+		<p>President | Engineering Physics C'19</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>Ryan Park</h3>
+		<p>Vice President | Economics C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>Andre Askarinam</h3>
+		<p>Director of PR | EECS C'18</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>David Dominguez Hooper</h3>
+		<p>Senior Advisor | EECS C'18</p>
+	</article>
+</section>
+
+<br>
+
+## Project Managers
+<hr>
+
+<section class="people">
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>Trey Fortmuller</h3>
+		<p>President | Engineering Physics C'19</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>Ryan Park</h3>
+		<p>Vice President | Economics C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>Andre Askarinam</h3>
+		<p>Director of PR | EECS C'18</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/brie.jpg" alt="" />
+		</span>
+		<h3>David Dominguez Hooper</h3>
+		<p>Senior Advisor | EECS C'18</p>
+	</article>
+</section>
+
+<br>
+
+## Leadership Alumni
+<hr>
+
+<a href="/alumni" class="button">Alumni</a>
+
+

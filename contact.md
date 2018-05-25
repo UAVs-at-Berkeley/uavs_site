@@ -5,6 +5,8 @@ title: Contact
 
 Don't hesitate to reach out with any questions, we'll get back to you as soon as we can.
 
+## Send a Message
+
 <!-- Formspree contact form -->
 <section>
 	<form method="post" action="https://formspree.io/{{ site.email }}"
@@ -28,7 +30,7 @@ method="POST">
 
 <!-- Social media links -->
 <section>
-	<h1>Connect</h1>
+	<h2>Connect</h2>
 	<p>We're active on social media, follow us to stay up to date on our activites.</p>
 	<ul class="icons">
 		<li><a target="_blank" href="{{ site.facebook }}" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
@@ -42,7 +44,7 @@ method="POST">
 </section>
 
 <!-- Map to the lab -->
-# Stop by our lab
+##  Stop by our lab
 UAVs@Berkeley  
 107A McLaughlin Hall  
 Berkeley CA, 94720
