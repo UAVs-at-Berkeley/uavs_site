@@ -9,31 +9,31 @@ title: Leadership
 <section class="people">
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/trey.jpg" alt="" />
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/cody.jpg" alt="" />
 		</span>
-		<h3>Trey Fortmuller</h3>
-		<p>President | Engineering Physics C'19</p>
+		<h3>Cody Limber</h3>
+		<p>Video/Photo Team Manager | Biology C'19</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/trey.jpg" alt="" />
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/charlene.jpg" alt="" />
 		</span>
-		<h3>Ryan Park</h3>
-		<p>Vice President | Economics C'20</p>
+		<h3>Charlene Shong</h3>
+		<p>Internal Relations Officer | Mechanical Engineering C'18</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/trey.jpg" alt="" />
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/kairui.jpg" alt="" />
 		</span>
-		<h3>Andre Askarinam</h3>
-		<p>Director of PR | EECS C'18</p>
+		<h3>Kairui Zeng</h3>
+		<p>External Relations Officer | CS C'19</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/trey.jpg" alt="" />
+			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/alicia.jpg" alt="" />
 		</span>
-		<h3>David Dominguez Hooper</h3>
-		<p>Senior Advisor | EECS C'18</p>
+		<h3>Alicia Auduong</h3>
+		<p>Financial Officer | Bioengineering C'19</p>
 	</article>
 </section>
 
