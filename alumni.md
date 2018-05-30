@@ -42,6 +42,6 @@ title: Leadership
 ## Back to Leadership
 <hr>
 
-<a href="/leadership" class="button">Leadership</a>
+<a href="{{ site.url }}{{ site.baseurl }}/leadership.html" class="button">Leadership</a>
 
 

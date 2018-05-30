@@ -5,18 +5,11 @@ title: Home
 
 <header>
 
-<!-- <h1>This is Phantom, a free, fully responsive site<br />
-template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1> -->
-
 <div class="12u$"><span class="image main"><img src="images/background.png" alt="" /></span></div>
 
 </header>
 
 We are a student organization dedicated towards providing a central resource hub for all things related to unmanned aerial vehicles within UC Berkeley, which include multirotors, fixed wing aircraft, and other miscellaneous UAVs.
-
-## About
-
-By providing a resource-rich organization for UC Berkeley students interested in designing, building, and/or flying UAVs for a multitude of purposes, we hope to encourage collaboration across multiple engineering disciplines. Students will be encouraged to step out of their comfort zone and learn new skills by working on project teams with other majors. Activities include a range of aerial photography/videography projects, academic research projects, and racing competitions.
 
 <section class="people">
 	<article>
@@ -67,7 +60,7 @@ By providing a resource-rich organization for UC Berkeley students interested in
 
 ## About
 
-By providing a resource-rich organization for UC Berkeley students interested in designing, building, and/or flying UAVs for a multitude of purposes, we hope to encourage collaboration across multiple engineering disciplines. Students will be encouraged to step out of their comfort zone and learn new skills by working on project teams with other majors.   Activities include a range of aerial photography/videography projects, academic research projects, and racing competitions. Other goals include: teaching basic, intermediate, and advanced courses in flying, operating, and controlling UAVs; organizing and setting up events for UAV flying meet-ups and outreach opportunities; and creating an open space for all UAV enthusiasts, engineers, and flyers to collaborate and create new and rich experiences through the use of UAVs.  Above all, UAVs @ Berkeley seeks to bring the capabilities and potential of unmanned aerial vehicles to the minds and hands of students, engineers, and the public alike.
+By providing a resource-rich organization for UC Berkeley students interested in designing, building, and/or flying UAVs for a multitude of purposes, we hope to encourage collaboration across multiple engineering disciplines. Students will be encouraged to step out of their comfort zone and learn new skills by working on project teams with other majors.   Activities include a range of aerial photography/videography projects, academic research projects, and racing competitions. Other goals include: teaching basic, intermediate, and advanced courses in flying, operating, and controlling UAVs; organizing and setting up events for UAV flying meet-ups and outreach opportunities; and creating an open space for all UAV enthusiasts, engineers, and flyers to collaborate and create new and rich experiences through the use of UAVs.  Above all, UAVs@Berkeley seeks to bring the capabilities and potential of unmanned aerial vehicles to the minds and hands of students, engineers, and the public alike.
 
 ## History
 
