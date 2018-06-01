@@ -1,11 +1,48 @@
 ---
 layout: page
 title: Sponsors
-featured-image: images/pic13.jpg
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.
+We owe a huge debt of gratitude to our sponsors. The companies listed below recognize the value of our research and educational efforts and each offered funding, discounts, or in-kind hardware donations to help our projects move forward. If you're interested in becoming a sponsor of UAVs@Berkeley, please don't hesitate to reach out on our <a target="_blank" href="{{ site.url }}{{ site.baseurl }}/contact.html">contact</a> page.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.
+<span class="image main">
+	<a target="_blank" href="https://www.autodesk.com/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/autodesk.png" alt="" />
+	</a>
+</span>
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+<span class="image main">
+	<a target="_blank" href="https://www.emaxmodel.com/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/emax.png" alt="" />
+	</a>
+</span>
+
+<span class="image main">
+	<a target="_blank" href="https://www.altium.com/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/altium.png" alt="" />
+	</a>
+</span>
+
+<span class="image main">
+	<a target="_blank" href="https://3dr.com/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/3dr.png" alt="" />
+	</a>
+</span>
+
+<span class="image main">
+	<a target="_blank" href="https://www.genstattu.com/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/tattu.png" alt="" />
+	</a>
+</span>
+
+<span class="image main">
+	<a target="_blank" href="https://esc.berkeley.edu/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/esc.png" alt="" />
+	</a>
+</span>
+
+<span class="image main">
+	<a target="_blank" href="https://www.bhphotovideo.com/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/bh.png" alt="" />
+	</a>
+</span>
