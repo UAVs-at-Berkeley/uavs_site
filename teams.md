@@ -22,7 +22,7 @@ Our engineering projects teams design, build, and test novel advances in aerial 
 </div>
 
 ## CALFPV Drone Racing Team
-FPV (First Person View) drone racing is an adrenaline rush like no other.
+<a href="https://en.wikipedia.org/wiki/First-person_view_(radio_control)" target="_blank">FPV</a> (First Person View) drone racing is an adrenaline rush like no other. We design, build, and pilot high-powered quadcopters capabale of flying up to 100mph through video goggles giving us a live view of what the aircraft sees. We set up airgates and pylons and race a course, or fly acrobatic freestyle in unique locations. The CALFPV team competes on a national level with other university FPV racing teams and travels to Purdue Univerity for the <a href="http://collegiatedroneracingassociation.com/" target="_blank">Collegiate Drone Racing National Championship</a> each year.
 
 <div class="box alt">
 <div class="row uniform">
@@ -39,7 +39,7 @@ FPV (First Person View) drone racing is an adrenaline rush like no other.
 </div>
 
 ## Videography/Photography Team
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+The videography and photography team focuses on capturing scenes from the skies. The team takes trips to destinations and events throughout the bay area to capture content. Each member learns professional video and photo editing software culiminating in a finished video project at the end of the semester. The team also shoots drone footage for other clubs and teams like the video below featuring <a href="http://caltriathlon.com/" target="_blank">Cal Triathalon</a>. For more content from the video/photo team, check out our <a target="_blank" href="{{ site.youtube }}">YouTube</a> channel and <a target="_blank" href="{{ site.instagram }}">Instagram</a>.
 
 <div class="box alt">
 <div class="row uniform">
