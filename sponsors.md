@@ -12,6 +12,12 @@ We owe a huge debt of gratitude to our sponsors. The companies listed below reco
 </span>
 
 <span class="image main">
+	<a target="_blank" href="http://its.berkeley.edu/">
+		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/its.png" alt="" />
+	</a>
+</span>
+
+<span class="image main">
 	<a target="_blank" href="https://www.emaxmodel.com/">
 		<img src="{{ site.url }}{{ site.baseurl }}/images/sponsors/emax.png" alt="" />
 	</a>
