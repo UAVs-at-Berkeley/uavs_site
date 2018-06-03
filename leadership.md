@@ -35,7 +35,7 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/david.jpg" alt="" />
 		</span>
 		<h3>David Dominguez Hooper</h3>
-		<p>Senior Advisor | EECS C'18</p>
+		<p>Founder & Senior Advisor | EECS C'18</p>
 	</article>
 </section>
 
@@ -107,7 +107,7 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 			<img src="{{ site.url }}{{ site.baseurl }}/images/headshots/suneel.jpg" alt="" />
 		</span>
 		<h3>Suneel Belkhale</h3>
-		<p>AutoQuad Project Manager | EECS C'19</p>
+		<p>AutoQuad Project Manager | EECS C'20</p>
 	</article>
 </section>
 
