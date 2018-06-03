@@ -33,6 +33,7 @@ method="POST">
 	<h2>Connect</h2>
 	<p>We're active on social media, follow us to stay up to date on our activites.</p>
 	<ul class="icons">
+		<li><a target="_blank" href="{{ site.slack }}" class="icon style2 fa-slack"><span class="label">Slack</span></a></li>
 		<li><a target="_blank" href="{{ site.facebook }}" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 		<li><a target="_blank" href="{{ site.youtube }}" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
 		<li><a target="_blank" href="{{ site.instagram }}" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
