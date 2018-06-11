@@ -41,7 +41,6 @@ title: Leadership
 
 ## Back to Leadership
 <hr>
-
-<a href="leadership.html" class="button">Leadership</a>
+<a href="{{ 'leadership.html' | relative_url }}" class="button">Leadership</a>
 
 

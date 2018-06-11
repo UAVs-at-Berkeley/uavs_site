@@ -3400,9 +3400,9 @@
 					text-indent: 4.25em;
 				}
 
-					#menu > .close:before, #menu > .close:after {
-						background-size: 1.5em 1.5em;
-					}
+				#menu > .close:before, #menu > .close:after {
+					background-size: 1.5em 1.5em;
+				}
 
 		}
 
