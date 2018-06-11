@@ -115,7 +115,6 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 
 ## Leadership Alumni
 <hr>
-
-<a href="alumni.html" class="button">Alumni</a>
+<a href="{{ 'alumni.html' | relative_url }}" class="button">Alumni</a>
 
 
