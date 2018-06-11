@@ -14,42 +14,42 @@ We are a student organization dedicated to providing a central resource for unma
 <section class="icon_grid">
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/flat_icons/engineer_icon.png" alt="" />
+			<img src="images/flat_icons/engineer_icon.png" alt="" />
 		</span>
 		<h3>Engineering Projects</h3>
 		<p>Design, code, and build novel projects in aerial robotics.</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/flat_icons/racing_icon.png" alt="" />
+			<img src="images/flat_icons/racing_icon.png" alt="" />
 		</span>
 		<h3>Drone Racing</h3>
 		<p>Pilot acrobatic FPV racing quadcopters up to 100mph in competitive collegiate events.</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/flat_icons/video_icon.png" alt="" />
+			<img src="images/flat_icons/video_icon.png" alt="" />
 		</span>
 		<h3>Video/Photo</h3>
 		<p>Fly videography drones to capture scenes from the skies and produce video edits.</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/flat_icons/build_icon.png" alt="" />
+			<img src="images/flat_icons/build_icon.png" alt="" />
 		</span>
 		<h3>Build Days</h3>
 		<p>Go from parts to a flying machine in a matter of hours with some help from our members.</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/flat_icons/fly_icon.png" alt="" />
+			<img src="images/flat_icons/fly_icon.png" alt="" />
 		</span>
 		<h3>Fly Days</h3>
 		<p>Learn to fly a drone with our hardware and some help from our members.</p>
 	</article>
 	<article>
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/flat_icons/milestone_icon.png" alt="" />
+			<img src="images/flat_icons/milestone_icon.png" alt="" />
 		</span>
 		<h3>Milestones</h3>
 		<p>All our project teams share their progress and communicate what they've learned.</p>
@@ -61,7 +61,7 @@ We are a student organization dedicated to providing a central resource for unma
 ## About
 By providing a resource-rich organization for UC Berkeley students interested in designing, building, and flying UAVs, we hope to encourage collaboration across multiple engineering disciplines. Students will step out of their comfort zone and learn new skills by working on project teams with other majors. To view some of the work we've done in the past, check out our projects:
 
-<a href="{{ site.url }}{{ site.baseurl }}/projects.html" class="button">Projects</a>
+<a href="projects.html" class="button">Projects</a>
 
 Aside from a range of aerial videography projects, academic research projects, and racing competitions, our club has a strong infrastructure for educating our campus and the public about drones and their applications. We host Fly Days, Build Days, and symposium style "Milestone" events to give campus affiliates an understanding of drones today, and how they'll be important in the future. Above all, UAVs@Berkeley seeks to bring the capabilities and potential of unmanned aerial vehicles to the minds and hands of students at Cal.
 
