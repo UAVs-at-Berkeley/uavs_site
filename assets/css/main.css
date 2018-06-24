@@ -3223,7 +3223,7 @@
 							opacity: 0;
 						}
 
-		@media screen and (max-width: 736px) {
+		/*@media screen and (max-width: 736px) {
 
 			#header {
 				padding: 1.25em 0 0.1em 0 ;
@@ -3244,42 +3244,47 @@
 						background-size: 1.5em 1.5em;
 					}
 
-		}
+		}*/
 
 /* Menu */
 
-	#wrapper {
+	.topnav ul {
+	    list-style-type: none;
+	    margin: 0 0 2em 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: #f6f6f6;
+	    border-radius: 4px;
+	}
+
+	.topnav li {
+	    float: left;
+	   	text-align: center;
+	}
+
+	.topnav li a {
+	    display: block;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    border-bottom-color: transparent;
+	}
+
+	.topnav li a:hover {
+	    background-color: #f1f1f1;
+	}
+
+
+	/*#wrapper {
 		-moz-transition: opacity 0.45s ease;
 		-webkit-transition: opacity 0.45s ease;
 		-ms-transition: opacity 0.45s ease;
 		transition: opacity 0.45s ease;
 		opacity: 1;
-	}
+	}*/
 
-	#menu {
-		-moz-transform: translateX(22em);
-		-webkit-transform: translateX(22em);
-		-ms-transform: translateX(22em);
-		transform: translateX(22em);
-		-moz-transition: -moz-transform 0.45s ease, visibility 0.45s;
-		-webkit-transition: -webkit-transform 0.45s ease, visibility 0.45s;
-		-ms-transition: -ms-transform 0.45s ease, visibility 0.45s;
-		transition: transform 0.45s ease, visibility 0.45s;
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 22em;
-		max-width: 80%;
-		height: 100%;
-		-webkit-overflow-scrolling: touch;
-		background: #585858;
-		color: #ffffff;
-		cursor: default;
-		visibility: hidden;
-		z-index: 10002;
-	}
 
-		#menu > .inner {
+	/*	#menu > .inner {
 			-moz-transition: opacity 0.45s ease;
 			-webkit-transition: opacity 0.45s ease;
 			-ms-transition: opacity 0.45s ease;
@@ -3317,9 +3322,9 @@
 					#menu > .inner > ul > li:first-child {
 						border-top: 0;
 						margin-top: -1em;
-					}
+					}*/
 
-		#menu > .close {
+/*		#menu > .close {
 			-moz-transition: opacity 0.45s ease, -moz-transform 0.45s ease;
 			-webkit-transition: opacity 0.45s ease, -webkit-transform 0.45s ease;
 			-ms-transition: opacity 0.45s ease, -ms-transform 0.45s ease;
@@ -3342,9 +3347,9 @@
 			overflow: hidden;
 			padding: 0;
 			white-space: nowrap;
-		}
+		}*/
 
-			#menu > .close:before, #menu > .close:after {
+/*			#menu > .close:before, #menu > .close:after {
 				-moz-transition: opacity 0.2s ease;
 				-webkit-transition: opacity 0.2s ease;
 				-ms-transition: opacity 0.2s ease;
@@ -3359,9 +3364,9 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: 2em 2em;
-			}
+			}*/
 
-			#menu > .close:before {
+			/*#menu > .close:before {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
 				opacity: 0;
 			}
@@ -3369,17 +3374,17 @@
 			#menu > .close:after {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
 				opacity: 1;
-			}
+			}*/
 
-			#menu > .close:hover:before {
+			/*#menu > .close:hover:before {
 				opacity: 1;
 			}
 
 			#menu > .close:hover:after {
 				opacity: 0;
-			}
+			}*/
 
-		@media screen and (max-width: 736px) {
+		/*@media screen and (max-width: 736px) {
 
 			#menu {
 				-moz-transform: translateX(16.5em);
@@ -3404,9 +3409,9 @@
 					background-size: 1.5em 1.5em;
 				}
 
-		}
+		}*/
 
-	body.is-menu-visible #wrapper {
+/*	body.is-menu-visible #wrapper {
 		-moz-pointer-events: none;
 		-webkit-pointer-events: none;
 		-ms-pointer-events: none;
@@ -3434,6 +3439,7 @@
 			transform: scale(1.0) rotate(0deg);
 			opacity: 1;
 		}
+*/
 
 /* Main */
 
