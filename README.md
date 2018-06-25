@@ -9,12 +9,19 @@ This site should be updated at least once per semester to update:
 
 ## Getting Started
 Refer to the [Jekyll website](https://jekyllrb.com/) for more detailed information on how Jekyll works and why it's useful. Also, [DevTips](https://www.youtube.com/watch?v=iWowJBRMtpc) has a great tutorial series using Jekyll. To get started working with the site directly, (assuming you have a working version of Ruby already installed) simply install Jekyll:
+
 ```gem install bundler jekyll```
+
 Navigate to where you'd like to do development and clone this repo:
+
 ```git clone https://github.com/UAVs-at-Berkeley/uavs_site.git```
+
 ```cd uavs_site```
+
 Start up Jekyll and have it watch for changes
+
 ```jekyll serve --watch```
+
 In your browser, navigate to the local host where Jekyll is serving the site, by default this is ```http://localhost:4000/```
 Now you can make changes in the source code, refresh your browser, and watch the changes render.
 
