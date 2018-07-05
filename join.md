@@ -5,7 +5,7 @@ title: Join
 
 <span class="image main"><img src="images/join/join1.jpg" alt="" /></span>
 
-All majors are welcome at UAVs@Berkeley and everyone can bring something unique and valuable to the table. You can join at any time during the semester but most people join teams at the beginnning of each semester during our recruitment process. No experience is necessary as long as you've got a passion unmanned flight and the time to dedicate to our efforts. If you're looking to become an active member of the club, the most important thing to do is to join our Slack channels where all club communication takes place. The link to join is below:
+All majors are welcome at UAVs@Berkeley and everyone can bring something unique and valuable to the table. You can join at any time during the semester but most people join teams at the beginnning of each semester during our recruitment process. No experience is necessary as long as you've got a passion for unmanned flight and the time to dedicate to our efforts. If you're looking to become an active member of the club, the most important thing to do is to join our Slack channels where all club communication takes place. The link to join is below:
 
 <a target="_blank" href="https://join.slack.com/t/uavsatberkeley/signup" class="button">Slack Signup</a>
 
