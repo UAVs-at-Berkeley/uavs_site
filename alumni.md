@@ -9,6 +9,34 @@ title: Leadership
 <section class="people">
 	<article>
 		<span class="image">
+			<img src="images/headshots/david.jpg" alt="" />
+		</span>
+		<h3>David Dominguez Hooper</h3>
+		<p>Founder | President | X Class Project Manager | Senior Advisor | EECS C'18</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/andre.jpg" alt="" />
+		</span>
+		<h3>Andre Askarinam</h3>
+		<p>Director of PR | EECS C'18</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/ryan.jpg" alt="" />
+		</span>
+		<h3>Ryan Park</h3>
+		<p>Vice President | Economics C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/tanner.jpg" alt="" />
+		</span>
+		<h3>Tanner Dekock</h3>
+		<p>Lasertag Project Manager | EECS C'19</p>
+	</article>
+	<article>
+		<span class="image">
 			<img src="images/headshots/cody.jpg" alt="" />
 		</span>
 		<h3>Cody Limber</h3>
