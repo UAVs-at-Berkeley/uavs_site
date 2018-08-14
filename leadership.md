@@ -62,7 +62,7 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 </section>
 
 <br> -->
-<!-- 
+
 ## Project Managers
 <hr>
 <section class="people">
@@ -75,19 +75,19 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 	</article>
 	<article>
 		<span class="image">
-			<img src="images/headshots/alex.jpg" alt="" />
+			<img src="images/headshots/joey.jpg" alt="" />
 		</span>
-		<h3>Alex Chan</h3>
-		<p>FlyWave Project Manager | CS C'19</p>
+		<h3>Joey Kroeger</h3>
+		<p>CALFPV Team Captain | CS C'19</p>
 	</article>
-	<article>
+<!-- 	<article>
 		<span class="image">
 			<img src="images/headshots/suneel.jpg" alt="" />
 		</span>
 		<h3>Suneel Belkhale</h3>
 		<p>AutoQuad Project Manager | EECS C'20</p>
-	</article>
-</section> -->
+	</article> -->
+</section>
 
 <br>
 
