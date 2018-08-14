@@ -28,7 +28,7 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 			<img src="images/headshots/eric.jpg" alt="" />
 		</span>
 		<h3>Eric Sivonxay</h3>
-		<p>Financial Officer | Chemical Engineering (Grad)</p>
+		<p>Vice President | Chemical Engineering (Grad)</p>
 	</article>
 	<article>
 		<span class="image">
