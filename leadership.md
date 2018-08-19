@@ -78,15 +78,29 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 			<img src="images/headshots/joey.jpg" alt="" />
 		</span>
 		<h3>Joey Kroeger</h3>
-		<p>CALFPV Team Captain | CS C'19</p>
+		<p>CALFPV Team Captain | Mechanical Engineering C'18</p>
 	</article>
-<!-- 	<article>
+	<article>
 		<span class="image">
 			<img src="images/headshots/suneel.jpg" alt="" />
 		</span>
 		<h3>Suneel Belkhale</h3>
 		<p>AutoQuad Project Manager | EECS C'20</p>
-	</article> -->
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/darius.jpg" alt="" />
+		</span>
+		<h3>Darius Dastur</h3>
+		<p>AUVSI Competition Project Manager | Mechanical Engineering C'20</p>
+	</article>
+<!-- 	<article>
+		<span class="image">
+			<img src="images/headshots/darius.jpg" alt="" />
+		</span>
+		<h3>Tim Liu</h3>
+		<p>Project Manager | CS C'20</p>
+	</article>	 -->
 </section>
 
 <br>
