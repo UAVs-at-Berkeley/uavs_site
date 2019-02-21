@@ -103,7 +103,7 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 	</article>
 	<article>
 		<span class="image">
-			<img src="images/headshots/tim.jpg" alt="" />
+			<img src="images/headshots/tim.png" alt="" />
 		</span>
 		<h3>Timothy Liu</h3>
 		<p>V2V project Project Manager | CS C'20</p>
