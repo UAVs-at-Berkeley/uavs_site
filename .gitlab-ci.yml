@@ -17,7 +17,7 @@ pages:
   - chmod 400 id_rsa
   - mkdir "${HOME}/.ssh"
   - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
-  - rsync -hrvz --delete --exclude='autocal' --exclude='.*' -e 'ssh -i id_rsa' public/ uav@tsunami.ocf.berkeley.edu:~/public_html/
+  - rsync -hrvz --delete --exclude 'autocal' --exclude '\..*' -e 'ssh -i id_rsa' public/ uav@tsunami.ocf.berkeley.edu:~/public_html/
 
   artifacts:
     paths:
