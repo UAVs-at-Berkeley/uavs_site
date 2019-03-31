@@ -1,0 +1,27 @@
+image: ruby:2.3
+
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+before_script:
+  - apt-get update
+  - apt-get --yes --force-yes install rsync ssh
+  - bundle install
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  - echo "${SSH_PRIVATE_KEY}" > id_rsa
+  - chmod 400 id_rsa
+  - mkdir "${HOME}/.ssh"
+  - echo "${SSH_HOST_KEY}" > "${HOME}/.ssh/known_hosts"
+  - rsync -hrvz --delete --exclude='autocal' --exclude='.*' -e 'ssh -i id_rsa' public/ uav@tsunami.ocf.berkeley.edu:~/public_html/
+
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
