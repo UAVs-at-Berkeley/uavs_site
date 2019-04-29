@@ -57,7 +57,7 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 			<img src="images/headshots/adam.jpg" alt="" />
 		</span>
 		<h3>Adam Saleh</h3>
-		<p>Outreach Officer | Cognitive Science C'21<br/>Sustainable Design Minor</p>
+		<p>Outreach Officer | Cognitive Science C'22<br/>Sustainable Design Minor</p>
 	</article>
 	<!-- <article>
 		<span class="image">
