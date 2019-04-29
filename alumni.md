@@ -63,6 +63,13 @@ title: Leadership
 		<h3>Alicia Auduong</h3>
 		<p>Financial Officer | Bioengineering C'19</p>
 	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/joey.jpg" alt="" />
+		</span>
+		<h3>Joey Kroeger</h3>
+		<p>CALFPV Team Captain | Mechanical Engineering C'18</p>
+	</article>
 </section>
 
 <br>

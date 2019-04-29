@@ -52,6 +52,13 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 		<h3><a href="https://minospark.com/" style="inherit">Minos Park</a></h3>
 		<p>Tech Officer | Computer Science C'19</p>
 	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/adam.jpg" alt="" />
+		</span>
+		<h3>Adam Saleh</h3>
+		<p>Outreach Officer | Cognitive Science C'21<br/>Sustainable Design Minor</p>
+	</article>
 	<!-- <article>
 		<span class="image">
 			<img src="images/headshots/joel.jpg" alt="" />
@@ -79,13 +86,6 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 		</span>
 		<h3>Nick Doerschlag</h3>
 		<p>Video/Photo Team Manager | Architecture C'20</p>
-	</article>
-	<article>
-		<span class="image">
-			<img src="images/headshots/joey.jpg" alt="" />
-		</span>
-		<h3>Joey Kroeger</h3>
-		<p>CALFPV Team Captain | Mechanical Engineering C'18</p>
 	</article>
 	<article>
 		<span class="image">
