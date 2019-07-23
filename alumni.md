@@ -70,6 +70,13 @@ title: Leadership
 		<h3>Joey Kroeger</h3>
 		<p>CALFPV Team Captain | Mechanical Engineering C'18</p>
 	</article>
+        <article>
+                <span class="image">
+                        <img src="images/headshots/isabella.jpg" alt="" />
+                </span>
+                <h3>Isabella Maceda</h3>
+                <p>Co-President | EECS C'19</p>
+        </article>
 </section>
 
 <br>

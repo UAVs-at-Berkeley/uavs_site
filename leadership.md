@@ -11,24 +11,17 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 <section class="people">
 	<article>
 		<span class="image">
-			<img src="images/headshots/isabella.jpg" alt="" />
-		</span>
-		<h3>Isabella Maceda</h3>
-		<p>Co-President | EECS C'19</p>
-	</article>
-	<article>
-		<span class="image">
 			<img src="images/headshots/matt.jpg" alt="" />
 		</span>
 		<h3>Matt Wong</h3>
-		<p>Co-President | Data Science C'20</p>
+		<p>President | Data Science C'20</p>
 	</article>
 	<article>
 		<span class="image">
 			<img src="images/headshots/eric.jpg" alt="" />
 		</span>
 		<h3>Eric Sivonxay</h3>
-		<p>Vice President | Chemical Engineering (Grad)</p>
+		<p>Senior Advisor | Chemical Engineering (Grad)</p>
 	</article>
 	<article>
 		<span class="image">
@@ -50,7 +43,7 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 			<img src="images/headshots/minos.png" alt="" />
 		</span>
 		<h3><a href="https://minospark.com/" style="inherit">Minos Park</a></h3>
-		<p>Tech Officer | Computer Science C'19</p>
+		<p>Technical Officer | Computer Science C'19</p>
 	</article>
 	<article>
 		<span class="image">
@@ -59,20 +52,6 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 		<h3>Adam Saleh</h3>
 		<p>Outreach Officer | Cognitive Science C'22<br/>Sustainable Design Minor</p>
 	</article>
-	<!-- <article>
-		<span class="image">
-			<img src="images/headshots/joel.jpg" alt="" />
-		</span>
-		<h3>Joel Lee</h3>
-		<p>Marketing and Media Officer | Math C'19</p>
-	</article> -->
-	<!-- <article>
-		<span class="image">
-			<img src="images/headshots/joey.jpg" alt="" />
-		</span>
-		<h3>Joey Kroeger</h3>
-		<p>Director of R&D | Mechanical Engineering C'18</p>
-	</article> -->
 </section>
 
 <br>
