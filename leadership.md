@@ -18,17 +18,10 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 	</article>
 	<article>
 		<span class="image">
-			<img src="images/headshots/eric.jpg" alt="" />
+			<img src="images/headshots/ryan.jpg" alt="" />
 		</span>
-		<h3>Eric Sivonxay</h3>
-		<p>Senior Advisor | Chemical Engineering (Grad)</p>
-	</article>
-	<article>
-		<span class="image">
-			<img src="images/headshots/trey.jpg" alt="" />
-		</span>
-		<h3>Trey Fortmuller</h3>
-		<p>Senior Advisor | Engineering Physics C'19</p>
+		<h3>Ryan Park</h3>
+		<p>Vice President | Economics C'20</p>
 	</article>
 </section>
 
@@ -68,25 +61,11 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 	</article>
 	<article>
 		<span class="image">
-			<img src="images/headshots/suneel.jpg" alt="" />
-		</span>
-		<h3>Suneel Belkhale</h3>
-		<p>AutoQuad Project Manager | EECS C'20</p>
-	</article>
-	<article>
-		<span class="image">
 			<img src="images/headshots/darius.jpg" alt="" />
 		</span>
 		<h3>Darius Dastur</h3>
 		<p>AUVSI Competition Project Manager | Mechanical Engineering C'20</p>
 	</article>
-	<article>
-		<span class="image">
-			<img src="images/headshots/tim.png" alt="" />
-		</span>
-		<h3>Timothy Liu</h3>
-		<p>V2V project Project Manager | CS C'20</p>
-	</article>	
 </section>
 
 <br>
