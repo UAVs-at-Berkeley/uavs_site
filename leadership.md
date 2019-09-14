@@ -66,6 +66,13 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 		<h3>Darius Dastur</h3>
 		<p>AUVSI Competition Project Manager | Mechanical Engineering C'20</p>
 	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/tim.png" alt="" />
+		</span>
+		<h3>Timothy Liu</h3>
+		<p>CS C'20</p>
+	</article>	
 </section>
 
 <br>
