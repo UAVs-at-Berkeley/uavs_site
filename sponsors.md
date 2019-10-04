@@ -18,6 +18,12 @@ We owe a huge debt of gratitude to our sponsors. The companies listed below reco
 </span>
 
 <span class="image main">
+	<a target="_blank" href="https://newbeedrone.com">
+		<img src="images/sponsors/newbee.png" alt="" />
+	</a>
+</span>
+
+<span class="image main">
 	<a target="_blank" href="https://www.emaxmodel.com/">
 		<img src="images/sponsors/emax.png" alt="" />
 	</a>
