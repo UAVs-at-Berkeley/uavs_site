@@ -98,6 +98,13 @@ title: Leadership
 		<h3>Suneel Belkhale</h3>
 		<p>AutoQuad Project Manager | EECS C'20</p>
 	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/tim.png" alt="" />
+		</span>
+		<h3>Timothy Liu</h3>
+		<p>AeroBear AutoNav PM | CS C'20</p>
+	</article>	
 </section>
 
 <br>
