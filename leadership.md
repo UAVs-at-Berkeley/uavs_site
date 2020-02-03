@@ -16,13 +16,6 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 		<h3>Matt Wong</h3>
 		<p>President | Data Science C'20</p>
 	</article>
-	<article>
-		<span class="image">
-			<img src="images/headshots/ryan.jpg" alt="" />
-		</span>
-		<h3>Ryan Park</h3>
-		<p>Vice President | Economics C'20</p>
-	</article>
 </section>
 
 <br>
@@ -68,11 +61,11 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 	</article>
 	<article>
 		<span class="image">
-			<img src="images/headshots/tim.png" alt="" />
+			<img src="images/headshots/minos.png" alt="" />
 		</span>
-		<h3>Timothy Liu</h3>
-		<p>CS C'20</p>
-	</article>	
+		<h3>Minos Park</h3>
+		<p>AUVSI Competition Project Manager | Computer Science C'20</p>
+	</article>
 </section>
 
 <br>
