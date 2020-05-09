@@ -26,7 +26,11 @@ In your browser, navigate to the local host where Jekyll is serving the site, by
 Now you can make changes in the source code, refresh your browser, and watch the changes render.
 
 ## Workflow
-There are two branches in this repo, a ```master``` branch and a ```gh-pages``` branch. The master branch is used for development, and ```master``` is periodically merged into the ```gh-pages``` branch as a development build of the website which is hosted on GitHub pages, the gh-pages branch is used to share changes with leadership members before pushing changes to the OCF servers.
+1. For development, create your own branch with a relavant name.
+2. Once ready for review, push the branch and create a pull request to merge onto the master branch
+3. After the CI passes and approval reviews are in, merge the branch
+
+That's it! The CI will take care of deploying the changes of the master branch.
 
 ## Pushing Changes to OCF
 Use an FTP client (like [CyberDuck](https://cyberduck.io/)) to transfer files to the OCF server. Pick the SFTP (SSH File Transfer Protocol) for connecting to the OCF server. The server is ```ssh.ocf.berkeley.edu```. The leadership has access to the username and password. 
