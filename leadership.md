@@ -47,13 +47,6 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 <section class="people">
 	<article>
 		<span class="image">
-			<img src="images/headshots/nick.jpg" alt="" />
-		</span>
-		<h3>Nick Doerschlag</h3>
-		<p>Video/Photo Team Manager | Architecture C'20</p>
-	</article>
-	<article>
-		<span class="image">
 			<img src="images/headshots/darius.jpg" alt="" />
 		</span>
 		<h3>Darius Dastur</h3>
@@ -61,10 +54,31 @@ The leadership at UAVs@Berkeley manages our projects, coordinates club sponsorsh
 	</article>
 	<article>
 		<span class="image">
+			<img src="images/headshots/nick.jpg" alt="" />
+		</span>
+		<h3>Nick Doerschlag</h3>
+		<p>Video/Photo Team Manager | Architecture C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/jonathan.jpg" alt="" />
+		</span>
+		<h3>Jonathan Pan</h3>
+		<p>AeroBear AutoNav Team Manager | Computer Science &<br/>Data Science C'21</p>
+	</article>
+	<article>
+		<span class="image">
 			<img src="images/headshots/minos.png" alt="" />
 		</span>
 		<h3>Minos Park</h3>
 		<p>AUVSI Competition Project Manager | Computer Science C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/calvin.jpg" alt="" />
+		</span>
+		<h3>Calvin Yan</h3>
+		<p>AeroBear ODLC Team Manager | Computer Science C'23</p>
 	</article>
 </section>
 
