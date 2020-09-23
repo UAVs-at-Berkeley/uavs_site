@@ -105,8 +105,36 @@ title: Leadership
 		<h3>Timothy Liu</h3>
 		<p>AeroBear AutoNav PM | CS C'20</p>
 	</article>	
-</section>
+	<article>
+		<span class="image">
+			<img src="images/headshots/darius.jpg" alt="" />
+		</span>
+		<h3>Darius Dastur</h3>
+		<p>AUVSI Competition Project Manager | Mechanical Engineering C'20</p>
+	</article>
 
+	<article>
+		<span class="image">
+			<img src="images/headshots/matt.jpg" alt="" />
+		</span>
+		<h3>Matt Wong</h3>
+		<p>President | Data Science C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/nick.jpg" alt="" />
+		</span>
+		<h3>Nick Doerschlag</h3>
+		<p>Video/Photo Team Manager | Architecture C'20</p>
+	</article>
+	<article>
+		<span class="image">
+			<img src="images/headshots/minos.png" alt="" />
+		</span>
+		<h3>Minos Park</h3>
+		<p>AUVSI Competition Project Manager | Computer Science C'20</p>
+	</article>
+</section>
 <br>
 
 ## Back to Leadership
