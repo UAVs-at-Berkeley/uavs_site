@@ -45,6 +45,6 @@ jobs:
 
     - name: upload-www
       run: |
-        cd ../jekyll_build/
+        cd jekyll_build/
         rm robots.txt
         scp -r * www:~/${{ secrets.WWW_PATH }}/
