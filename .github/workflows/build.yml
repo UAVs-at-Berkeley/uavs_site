@@ -50,7 +50,4 @@ jobs:
 
     - name: upload-www
       run: |
-        ls .
-        pwd
-        ls /github
-        # scp -r * www:~/${{ secrets.WWW_PATH }}/
+        scp -r * www:~/${{ secrets.WWW_PATH }}/
