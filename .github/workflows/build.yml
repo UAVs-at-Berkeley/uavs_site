@@ -25,7 +25,11 @@ jobs:
     - uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        build_only: true
+        target_branch: gh-pages-actions
+
+    - uses: actions/checkout@v2
+      with:
+        ref: gh-pages-actions
 
     - name: SSH Setup
       run: |
@@ -49,6 +53,4 @@ jobs:
         ls .
         pwd
         ls /github
-        cd /github/jekyll_build/
-        rm robots.txt
-        scp -r * www:~/${{ secrets.WWW_PATH }}/
+        # scp -r * www:~/${{ secrets.WWW_PATH }}/
