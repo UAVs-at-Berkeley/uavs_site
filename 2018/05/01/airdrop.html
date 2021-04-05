@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project AirDrop</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Project Manager/Author: Matt Wong | Darius Dastur | Tanner Dekock">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#000a43">
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#d5eef7">
+	<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/assets/css/main.css ">
+    <link rel="canonical" href="/2018/05/01/airdrop.html">
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+			<a href="/" class="logo">
+				<span class="symbol">
+					<img src="/images/logo.png" alt="" />
+				</span>
+			</a>
+			<p>If you are interested in joining UAVs@Berkeley for Spring 2021, please send an email to officers@uav.berkeley.edu</p>
+
+			<!-- Custom Nav -->
+			<div class="topnav">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/teams.html">Teams</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/leadership.html">Leadership</a></li>
+					<li><a href="/join.html">Join</a></li>
+					<li><a href="/calendar.html">Calendar</a></li>
+					<li><a href="/sponsors.html">Sponsors</a></li>
+					<li><a href="/campus.html">UAVs on Campus</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Nav -->
+			<!-- <nav id="nav">
+			    <ul>
+			      <li class="special">
+			        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+			        <div id="menu">
+			          <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="teams.html">Teams</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="leadership.html">Leadership</a></li>
+						<li><a href="join.html">Join</a></li>
+						<li><a href="calendar.html">Calendar</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="campus.html">UAVs on Campus</a></li>
+						<li><a href="contact.html">Contact</a></li>
+			          </ul>
+			        </div>
+			      </li>
+			    </ul>
+			  </nav>
+		</div> -->
+
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+
+    <h1>Project AirDrop</h1>  <p><strong>Project Manager/Author: Matt Wong</strong> | Darius Dastur | Tanner Dekock</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>UAVs@Berkeley has mostly focused on multirotor endeavors but this semester we decided to tackle our first fixed wing project. Project AirDrop’s goal was to create a GPS navigated plane that had the capability to autonomously deliver parcels. This technology has lots of everyday uses from disaster relief to organ delivery in rural areas. As one of the smaller project teams of Spring 2018, it was incredibly rewarding to see our idea come to fruition.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>As the delivery of goods becomes more and more efficient, UAVs are being increasingly explored  as delivery vehicles due to their ability to travel quickly through the air uninhibited by ground traffic. Solutions from Google and Amazon investigate the power of VTOL (Vertical Take-off and Landing) delivery aircraft but they currently are extremely expensive and still under development. Project Airdrop aims to provide a similar experience at a fraction of the cost.</p>
+
+<h2 id="project-description">Project Description</h2>
+
+<p>Project AirDrop consists of two main components: The Ground Station and the Aircraft. The ground station uploads GPS waypoints to the aircraft that uses onboard sensors to autonomously fly along the intended course. The aircraft contains a servo driven hatch that allows for payload drops.</p>
+
+<h2 id="subsystems">Subsystems</h2>
+
+<h4 id="the-frame">The frame</h4>
+
+<p>We decided to use the FliteTest Guinea Pig platform for our project due to its accessible design, price, large payload bay, and 1.5 meter wingspan.</p>
+
+<p><span class="image main"><img src="/../../images/projects/airdrop/airdrop1.jpg" alt="" /></span></p>
+
+<h4 id="the-software">The software</h4>
+
+<p><span class="image right"><img src="/../../images/projects/airdrop/airdrop2.png" alt="" /></span> We used iNAV, a branch of the flight software Cleanflight, to navigate our aircraft. This flight control software allowed for easy GPS integration as well as multiple flight modes adaptable to different environmental situations. We communicate with the plane from the ground station using a bluetooth connection.</p>
+
+<h4 id="the-drop">The drop</h4>
+
+<p>The payload rests in the belly of the plane during flight and floats down to earth with a parachute when the cargo bay is actuated.</p>
+
+<h2 id="challenges">Challenges</h2>
+
+<ul>
+  <li>
+    <p><strong>Power:</strong> Our motor and ESC combo was limited to 3S (11.1V) input so our plane was underpowered. This proved especially trying during flight since it needs to fly as stable as possible and for as long as possible for it to be a viable delivery vessel.</p>
+  </li>
+  <li>
+    <p><strong>Delivery pod:</strong> Occasionally the parachute would get stuck in the plane during deployment which meant the payload would hang underneath the plane until it landed.</p>
+  </li>
+  <li>
+    <p><strong>Short range telemetry:</strong>  This current design relies on a Bluetooth connection for ground station - aircraft communication. We found that the range of the connection did not allow in-flight telemetry. We solved this by utilizing an On Screen Display to visually show us real-time flight statistics.</p>
+  </li>
+  <li>
+    <p><strong>Durability:</strong> The frame was made of foamboard to reduce weight. This material is very fragile so any damages required immediate repairs.</p>
+  </li>
+</ul>
+
+<h2 id="findings">Findings</h2>
+
+<p>Constructing a UAV that has accurate GPS navigation and delivery capabilities was an attainable goal for UAVs@Berkeley. With a budget many times smaller than the likes of Google’s Project Wing, we were able to accomplish the same goals. The strongest application for Project Airdrop would be in situations where flying many full size aircraft isn’t quite useful such as disaster relief in dangerous conditions, short distance deliveries, rural area deliveries, and first aid. While it’s not accurate enough for deliveries in high density areas such as cities, Project Airdrop’s flight time and range makes it a far better delivery vessel than a traditional multirotor.</p>
+
+<p><span class="image main"><img src="/../../images/projects/airdrop/airdrop3.png" alt="" /></span></p>
+
+<h2 id="reflections">Reflections</h2>
+
+<p>Project Airdrop is the first fixed wing engineering project attempted by UAVs@Berkeley and was a success. Through the build process, we took note of design modifications to the Guinea Pig frame that would make it an even better delivery platform as well as which electronics would help make the flight smoother. With these in mind, our team is ready to refine future iterations of Project Airdrop.</p>
+
+<p><span class="image main"><img src="/../../images/projects/airdrop/airdrop4.jpg" alt="" /></span></p>
+
+<h2 id="maiden-flight-video">Maiden Flight Video</h2>
+
+<div class="video-wrapper">
+	<div class="video-responsive">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/iAIIu9zM7AU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+	</div>
+</div>
+ 
+
+	<hr>
+	<a href="/projects.html" class="button">Projects</a>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<ul class="icons">
+				<li><a target="_blank" href="https://join.slack.com/t/uavsatberkeley/signup" class="icon style2 fa-slack"><span class="label">Slack</span></a></li>
+				<li><a target="_blank" href="https://www.facebook.com/UAVsAtBerkeley/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a target="_blank" href="https://www.youtube.com/channel/UCdf9B_VJczebLHh9TooNBdA" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/uavsatberkeley/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a target="_blank" href="https://twitter.com/uavsatberkeley?lang=en" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a target="_blank" href="https://github.com/UAVs-at-Berkeley" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/company/uavsatberkeley/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a target="_blank" href="mailto:admin@uav.berkeley.edu" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</section>
+		<ul class="copyright">
+			<li>&copy; 2021 UAVs@Berkeley</li>
+			<li>Based on a design by <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+			<li>Jekyll integration by <a target="_blank" href="https://github.com/andrewbanchich">Andrew Banchich</a></li>
+		</ul>
+		<ul class="copyright">
+			<li><a class="copyright"  href="https://www.ocf.berkeley.edu">    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg" alt="Hosted by the OCF" style="border: 0;" /></a></li>
+			<li><p class="copyright">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

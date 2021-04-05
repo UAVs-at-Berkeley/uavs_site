@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle to Vehicle Communication</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Project leader/Author: Timothy Liu | Trey Fortmuller | Amal Mehta | Prom Putthisri | Kallan Bao">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#000a43">
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#d5eef7">
+	<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/assets/css/main.css ">
+    <link rel="canonical" href="/2019/09/06/v2v_sp19.html">
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+			<a href="/" class="logo">
+				<span class="symbol">
+					<img src="/images/logo.png" alt="" />
+				</span>
+			</a>
+			<p>If you are interested in joining UAVs@Berkeley for Spring 2021, please send an email to officers@uav.berkeley.edu</p>
+
+			<!-- Custom Nav -->
+			<div class="topnav">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/teams.html">Teams</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/leadership.html">Leadership</a></li>
+					<li><a href="/join.html">Join</a></li>
+					<li><a href="/calendar.html">Calendar</a></li>
+					<li><a href="/sponsors.html">Sponsors</a></li>
+					<li><a href="/campus.html">UAVs on Campus</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Nav -->
+			<!-- <nav id="nav">
+			    <ul>
+			      <li class="special">
+			        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+			        <div id="menu">
+			          <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="teams.html">Teams</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="leadership.html">Leadership</a></li>
+						<li><a href="join.html">Join</a></li>
+						<li><a href="calendar.html">Calendar</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="campus.html">UAVs on Campus</a></li>
+						<li><a href="contact.html">Contact</a></li>
+			          </ul>
+			        </div>
+			      </li>
+			    </ul>
+			  </nav>
+		</div> -->
+
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+
+    <h1>Vehicle to Vehicle Communication</h1>  <p>Project leader/Author: Timothy Liu | Trey Fortmuller | Amal Mehta | Prom Putthisri | Kallan Bao</p>
+
+<p><span class="image main"><img src="/../../images/projects/v2v/aruco.png" style="max-height: 500px; max-width: 500px;" alt="" /></span></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>One potential application for drones is on the construction site. While they are already being used to survey plots of land and to catch any potential issues during construction, having drones actually build the structure is still at least several years off. Having multiple drones working together to perform tasks such as laying bricks or putting steel beams into place at can make constructing buildings much more efficient and much safer for workers as well.</p>
+
+<h2 id="project-description">Project Description</h2>
+
+<p>The Vehicle to Vehicle Communication (V2V-Comm) project was designed to be a proof of concept to show that having drones actually assemble something on a construction site is feasible. We assembled a fleet of three drones with claws that can be used to pick up foam blocks and printed out a large grid of tags to help them navigate from one point to another.</p>
+
+<h2 id="drone-customizations">Drone Customizations</h2>
+
+<p>Each of our drones is controlled by a Raspberry Pi board, with a Ubiquiti image installed. We decided to use Ubiquiti instead of the standard Raspian image since Ubiquiti came with ROS (Robot Operating System) out of the box and provided an easy way for us to work with a custom library called RosFlight.</p>
+
+<p>Since the drones needed a claw to pick up foam blocks, we had to design that ourselves as well, so a few extra modifications were needed so we could mount it onto the bottom of the drone.</p>
+
+<h2 id="computer-vision">Computer Vision</h2>
+
+<p>The grid we used for the drones to navigate through consisted of a 2D array of ArUco markers. Each ArUco marker is a bitmap that allows the drone to determine different markers apart, which allows us to determine the location on the grid each drone is at. It also allows us to determine the drone’s orientation from the angle it sees the marker. Much of this functionality worked out of the box with OpenCV.</p>
+
+<p><span class="image main"><img src="/../../images/projects/v2v/aruco2.jpg" style="max-height: 500px; max-width: 500px;" alt="" /></span></p>
+
+<h2 id="communication">Communication</h2>
+
+<p>In order to ensure that drones do not collide with one another while navigating through the grid, we used ROS to publish and listen to different information, such as where it is on the grid. The goal was to have each drone moving through the grid in a circle and if one drone stopped, then the drone behind it would be able to determine if it was getting too close, allowing it to take the appropriate action.</p>
+
+<h2 id="looking-ahead">Looking Ahead</h2>
+
+<p>Much of the functionality to complete this project was finished over the course of the Spring 2019 semester. However due to time constraints, the claw could not be thoroughly tested in time and so we only had one claw for our three drones.</p>
+
+<p>The next steps for this project would be to finish building the claws and to build a simulation environment for our communication code to test our software. Once that has been completed, the actual drones will be ready to test.</p>
+
+<!--<div class="video-wrapper">
+	<div class="video-responsive">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/EP_dnBTCZg0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+</div>
+-->
+
+ 
+
+	<hr>
+	<a href="/projects.html" class="button">Projects</a>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<ul class="icons">
+				<li><a target="_blank" href="https://join.slack.com/t/uavsatberkeley/signup" class="icon style2 fa-slack"><span class="label">Slack</span></a></li>
+				<li><a target="_blank" href="https://www.facebook.com/UAVsAtBerkeley/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a target="_blank" href="https://www.youtube.com/channel/UCdf9B_VJczebLHh9TooNBdA" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/uavsatberkeley/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a target="_blank" href="https://twitter.com/uavsatberkeley?lang=en" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a target="_blank" href="https://github.com/UAVs-at-Berkeley" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/company/uavsatberkeley/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a target="_blank" href="mailto:admin@uav.berkeley.edu" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</section>
+		<ul class="copyright">
+			<li>&copy; 2021 UAVs@Berkeley</li>
+			<li>Based on a design by <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+			<li>Jekyll integration by <a target="_blank" href="https://github.com/andrewbanchich">Andrew Banchich</a></li>
+		</ul>
+		<ul class="copyright">
+			<li><a class="copyright"  href="https://www.ocf.berkeley.edu">    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg" alt="Hosted by the OCF" style="border: 0;" /></a></li>
+			<li><p class="copyright">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

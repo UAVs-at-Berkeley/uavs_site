@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AutoQuad</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Project Manager/Author: Suneel Belkhale | Alex Chan | Kevin Yang | Isabella Maceda | Valmik Prabhu">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#000a43">
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#d5eef7">
+	<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/assets/css/main.css ">
+    <link rel="canonical" href="/2018/05/01/autoquad.html">
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+			<a href="/" class="logo">
+				<span class="symbol">
+					<img src="/images/logo.png" alt="" />
+				</span>
+			</a>
+			<p>If you are interested in joining UAVs@Berkeley for Spring 2021, please send an email to officers@uav.berkeley.edu</p>
+
+			<!-- Custom Nav -->
+			<div class="topnav">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/teams.html">Teams</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/leadership.html">Leadership</a></li>
+					<li><a href="/join.html">Join</a></li>
+					<li><a href="/calendar.html">Calendar</a></li>
+					<li><a href="/sponsors.html">Sponsors</a></li>
+					<li><a href="/campus.html">UAVs on Campus</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Nav -->
+			<!-- <nav id="nav">
+			    <ul>
+			      <li class="special">
+			        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+			        <div id="menu">
+			          <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="teams.html">Teams</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="leadership.html">Leadership</a></li>
+						<li><a href="join.html">Join</a></li>
+						<li><a href="calendar.html">Calendar</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="campus.html">UAVs on Campus</a></li>
+						<li><a href="contact.html">Contact</a></li>
+			          </ul>
+			        </div>
+			      </li>
+			    </ul>
+			  </nav>
+		</div> -->
+
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+
+    <h1>AutoQuad</h1>  <p><strong>Project Manager/Author: Suneel Belkhale</strong> | Alex Chan | Kevin Yang | Isabella Maceda | Valmik Prabhu</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This project has been a joint effort between UAVs@Berkeley and Machine Learning @ Berkeley, two amazing clubs I’ve been a part of since my first semester here at Berkeley. In my mind, the natural intersection of these clubs’ missions is Reinforcement Learning. Since the beginning of the Spring 2018 semester, our team of 5 has been hard at work both building the infrastructure and actually developing algorithms for autonomous quadcopter flight. I’m really proud of the things we’ve accomplished, and I’m excited for you to learn about it!</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>So much research has been done on (ground) robotic arms, and the work I’ve seen on quadcopters has not really caught up. In the research I did before beginning this project, it seemed to me like quadcopter research has revolved around either control/stabilization implementations or short term path planning when your exact position and velocity are known at all times (usually using MOCAP systems). Our goal is to develop policies that require only a single camera and GPS data to efficiently operate over long time horizons in a diversity of environments. The goal of this project is to develop a model that allows a quadcopter to autonomously navigate from point A to point B while avoiding collisions with real-world obstacles such as terrain, trees, and rocks.</p>
+
+<h2 id="simulation">Simulation</h2>
+
+<p>Training an autonomous drone in the real world is impractical. In the process of learning a policy, the drone will definitely crash many, many times. Just to give you an idea, most modern Reinforcement Learning algorithms that are even demo-able are trained on at least 100K to 1M episodes. I don’t think our drone could handle that many crashes. To avoid this expensive and time-consuming option, we decided to create a realistic drone simulator instead.</p>
+
+<h3 id="selecting-a-simulation-engine">Selecting a Simulation Engine</h3>
+<p>Currently, existing drone simulations either have inaccurate physics / graphics or don’t interface with machine learning models for training or control. We did a lot of research on the best simulators today, and the three candidates we were left with were Microsoft’s AirSim, Gazebo (with ROS), and Mujoco w/ OpenAI Gym.</p>
+
+<p>AirSim is incredibly realistic and incorporates all the physics of drone flight out of the box. The main issue is that it is built on top of Unreal Engine, and the build process is finicky, to say the least. In addition, only pretty powerful Linux or Windows machines can run both UE5 and the AirSim Plugin – we didn’t have this kind of processing power, nor was it feasible to get working on everyone’s computers. In addition, we would have to figure out how to make our RL algorithms compatible with UE5. Gazebo is not photorealistic, but it would be fairly easy to get working with ML models. Mujoco has the same benefits and shortcomings.</p>
+
+<p>In the back of our minds throughout this process was a fourth option: make our own simulator. I recently had seen in an ML@Berkeley slack channel that Unity had come out with ML Agents, an interface between its simulation engine and generic ML algorithms. Most compelling, it is compatible with python!</p>
+
+<h3 id="designing-the-simulator">Designing the Simulator</h3>
+
+<p>Using Unity Editor, we developed a realistic, ML-oriented drone simulator that is cross platform and has customizable graphics and accurate drone physics. The Unity Engine allows for scripting and object-oriented design of the environment (C#) . We’ve also implemented the ability to randomly generate objects such as trees and rocks, allowing for robust learning and ensuring that our model does not overfit to any one environment. Here’s a teaser to get your imagination going:</p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/basic.png" alt="" /></span></p>
+
+<h4 id="mechanics">Mechanics</h4>
+
+<p>We implemented two flavors of physics in Unity. The first version simulates forces for each of the 4 motors, and has PID control for Roll, Pitch, Yaw, and Altitude to control the forces, similar to how most flight controllers operate. The second version applies torque in the direction of motion with a body referenced vertical force controlling thrust. We were able to get much more realistic flight with the second method, and so on top of this, we wrote a velocity setpoint controller for each degree of freedom.</p>
+
+<h4 id="environments">Environments</h4>
+
+<p>Another reason for choosing Unity was the breadth of environments available to us. We leveraged premade Assets like rocks and trees to develop custom environments for training. Here are some examples of small environments we made:</p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/default.png" alt="" /></span></p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/envs.png" alt="" /></span></p>
+
+<p>Eventually, we want all our environments to look like this, which is a real Unity environment (that we didn’t build):</p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/cool_env.jpg" alt="" /></span></p>
+
+<p>This next environment is the main one we used for the learning sections described in the following sections. The video below is a flythrough of its landscape. As a point of pride, I’d like to note that we only used free Assets from the Asset Store for all of our environments (which hopefully explains a lot).</p>
+
+<div class="video-wrapper">
+	<div class="video-responsive">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/hOprS-2Y2Uw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>	
+	</div>
+</div>
+
+<h3 id="python-interface">Python Interface</h3>
+
+<p>Despite the fact that Unity ML Agents only came out in late 2017, the documentation and tools provided in this free software are absolutely amazing. It makes any environment you can design in Unity feel just like a Mujoco environment on the python side. With basic modifications to all of our environments and their C# code, we were able to interface with these environments in python.</p>
+
+<h2 id="reinforcement-learning">Reinforcement Learning</h2>
+
+<p>From here onwards in this post, we will be talking about the algorithms we implemented to learn navigation control of the drone. Reinforcement Learning primarily involves learning a policy (how to take actions given some state input) using only rewards from the world and many episodes of training.</p>
+
+<p><span class="image right"><img src="/../../images/projects/autoquad/simple_RL_schema.png" alt="" /></span></p>
+
+<p>Click <a href="https://deeplearning4j.org/deepreinforcementlearning">here</a> for an intro to RL.</p>
+
+<p>The driving force behind research in this field is the idea that humans are able to learn a “policy” for survival that comes entirely from their previous experience in any environment and the rewards they perceive. Below we will examine two forms of Reinforcement Learning and the results in our environment.</p>
+
+<h3 id="imitation-learning">Imitation Learning</h3>
+
+<p>We initially tried out imitation learning, which takes user-generated trajectories and attempts to learn the States→Actions mapping from the data without any reward function. This is a supervised learning problem, and so we had fairly low expectations. In the end, the model was able to accomplish imitation, but it could not generalize to any disturbances or rearrangements of the environment. Below you can see some sample gifs/videos collected by several members of the team with minimal training.</p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/unity4.gif" alt="" /></span></p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/unity5.gif" alt="" /></span></p>
+
+<div class="video-wrapper">
+	<div class="video-responsive">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/wa2y3KdKfp8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>	
+	</div>
+</div>
+
+<div class="video-wrapper">
+	<div class="video-responsive">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/yT1zvTj5Sa0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>	
+	</div>
+</div>
+
+<div class="video-wrapper">
+	<div class="video-responsive">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/6gBfne_c5xI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>	
+	</div>
+</div>
+
+<p>While this achieves (arguably) reasonable performance given the small amount of samples we fed in (sample efficient), it is extremely sensitive to deviations from the distribution of states found in the training data. This lack of generalizability led us to DQN’s.</p>
+
+<h3 id="dqn">DQN</h3>
+
+<p>Instead of learning the direct mapping S→A, we learn S ྾ A → Q, where the Q-value corresponds to what the estimated future rewards will be after taking the action at that particular state. We use a neural network as a function approximator for the Q function, which takes in the camera image, drone heading, and distance to target. We used three convolutional layers and a 6 dense layer units, all with the ReLU activation function. We use several standard tricks to stabilize training, in particular an experience replay buffer and a target Q network to decorrelate updates. This is an off-policy algorithm, so we are able to use epsilon-greedy exploration.</p>
+
+<h4 id="reward-functions">Reward Functions</h4>
+
+<p>There are only a few parameters to play with in developing our reward function (primarily distance/velocity to target &amp; heading to target), and yet there are infinite ways of combining them.</p>
+
+<p>Our initial reward function was distance based, but the algorithm found that it was best to crash into obstacles to terminate the episode early. Thus, we changed the reward to also be proportional to the offset of the heading from the true heading to the target. We have experimented with several linear and nonlinear functions of distance and velocity. Additionally, large negative rewards occur from collision, and large positive rewards occur for success.</p>
+
+<h4 id="exploration-strategies">Exploration Strategies</h4>
+
+<p>Designing the reward function and exploration strategies prove to be the most difficult aspects of using the DQN. In sparse reward environments like these, it’s very difficult for the drone to ever find its target, and so the exploration strategy becomes incredibly important to minimize the number of training episodes. The first thing we tried was a randomized arc exploration function, where we follow arcs of motion for normally distributed lengths of time and at normally distributed turn radii (for each arc). The arc direction is decided epsilon-greedily. The goal here is to smoothen the motion of the drone as it explores in the environment initially. We observed less crashing into obstacles with this strategy, and yet exploration still finds it difficult to navigate towards the target.</p>
+
+<p>Future work will be done to build on our current exploration strategies and develop new ones. One idea is to implement hierarchical control of the drone. We pick a target to reach every n timesteps, and our low level controller runs a basic position setpoint controller to reach that target, and repeats. The choice of future target becomes the action output of the model, and we can easily discretize the target outputs as well, and exploration becomes hierarchical as well.</p>
+
+<h4 id="demonstrations">Demonstrations</h4>
+
+<p>Due to the difficulty of finding the target, we also tried incorporating demonstrations. The idea here is to provide examples of the correct behavior (similar to imitation learning), in order to bypass some of the exploration time required. Even with a few demonstrations, the drone was able to find the target much faster.</p>
+
+<h4 id="model-structures">Model Structures</h4>
+
+<p>Our preliminary model structure, for both DQN and Imitation Learning, was a convolutional neural network. This system uses five states (heading, distance to target, velocity, yaw rate, and collision detection) to determine the optimal path to the destination. These simulations run in super realtime speed (around 2x realtime), and our DQN approach is trained for 10000 episodes (takes ~2 days), with an episode max length of around 200 seconds. The main structure can be seen below.</p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/model_structure.png" alt="" /></span></p>
+
+<p>Much deeper model structures will be explored in the future.</p>
+
+<h4 id="image-preprocessing">Image Preprocessing</h4>
+
+<p>Since we are passing in raw images, I worried that training our convolutional network end-to-end would take longer than if we did some image preprocessing. Recent work has shown that it’s possible to convert monocular images to depth images with neural networks. We decided we would try implementing this as a preprocessing step for our images, since depth data is really all we care about. This drastically would reduce the state space size, and it would allow us to scale down images in resolution without losing depth information. Here are some examples of the monocular to depth image network we trained:</p>
+
+<p><span class="image main"><img src="/../../images/projects/autoquad/mono_to_depth.png" alt="" /></span></p>
+
+<h2 id="looking-ahead">Looking Ahead</h2>
+
+<p>This project will be continuing in the Fall semester as a collaboration with ML@B again. Now that all the infrastructure has been built and fully verified, I envision the continuation of this as being a fully-fledged (underfunded) research project. A lot of the work discussed above still requires much more training time for us to solidify our conclusions. I also believe that integrating classical control with our model in intelligent ways can benefit us, since ML is by no means a panacea. I’m hoping to add to this blog post as we learn more. We will explore many more state-of-the-art techniques in Deep Reinforcement Learning, and hopefully even develop some new methods of our own. Some examples include Inverse Reinforcement Learning and Hierarchical Learning.</p>
+
+<p>Compute power will be a major focus in the future. UAVs@Berkeley currently is planning to upgrade our lab desktop, and with this upgraded hardware, we can train our models much faster.</p>
+
+<p>I’d like to emphasize again that all of the work I’ve described was done in a single (very busy) semester at Cal. I’m incredibly proud of the team for this, and I think it’s an indication of great things to come.</p>
+ 
+
+	<hr>
+	<a href="/projects.html" class="button">Projects</a>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<ul class="icons">
+				<li><a target="_blank" href="https://join.slack.com/t/uavsatberkeley/signup" class="icon style2 fa-slack"><span class="label">Slack</span></a></li>
+				<li><a target="_blank" href="https://www.facebook.com/UAVsAtBerkeley/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a target="_blank" href="https://www.youtube.com/channel/UCdf9B_VJczebLHh9TooNBdA" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/uavsatberkeley/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a target="_blank" href="https://twitter.com/uavsatberkeley?lang=en" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a target="_blank" href="https://github.com/UAVs-at-Berkeley" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/company/uavsatberkeley/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a target="_blank" href="mailto:admin@uav.berkeley.edu" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</section>
+		<ul class="copyright">
+			<li>&copy; 2021 UAVs@Berkeley</li>
+			<li>Based on a design by <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+			<li>Jekyll integration by <a target="_blank" href="https://github.com/andrewbanchich">Andrew Banchich</a></li>
+		</ul>
+		<ul class="copyright">
+			<li><a class="copyright"  href="https://www.ocf.berkeley.edu">    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg" alt="Hosted by the OCF" style="border: 0;" /></a></li>
+			<li><p class="copyright">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

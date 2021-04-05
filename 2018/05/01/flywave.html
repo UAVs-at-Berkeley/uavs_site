@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FlyWave</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Project Manager/Author: Alex Chan | Raymond Gu | Timothy Liu | Nick Mecklenburg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#000a43">
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#d5eef7">
+	<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/assets/css/main.css ">
+    <link rel="canonical" href="/2018/05/01/flywave.html">
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+			<a href="/" class="logo">
+				<span class="symbol">
+					<img src="/images/logo.png" alt="" />
+				</span>
+			</a>
+			<p>If you are interested in joining UAVs@Berkeley for Spring 2021, please send an email to officers@uav.berkeley.edu</p>
+
+			<!-- Custom Nav -->
+			<div class="topnav">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/teams.html">Teams</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/leadership.html">Leadership</a></li>
+					<li><a href="/join.html">Join</a></li>
+					<li><a href="/calendar.html">Calendar</a></li>
+					<li><a href="/sponsors.html">Sponsors</a></li>
+					<li><a href="/campus.html">UAVs on Campus</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Nav -->
+			<!-- <nav id="nav">
+			    <ul>
+			      <li class="special">
+			        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+			        <div id="menu">
+			          <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="teams.html">Teams</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="leadership.html">Leadership</a></li>
+						<li><a href="join.html">Join</a></li>
+						<li><a href="calendar.html">Calendar</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="campus.html">UAVs on Campus</a></li>
+						<li><a href="contact.html">Contact</a></li>
+			          </ul>
+			        </div>
+			      </li>
+			    </ul>
+			  </nav>
+		</div> -->
+
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+
+    <h1>FlyWave</h1>  <p><strong>Project Manager/Author: Alex Chan</strong> | Raymond Gu | Timothy Liu | Nick Mecklenburg</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>One of the largest markets for drones is for tracking in action sports like racing and snowboarding. However, current quadcopters that utilize object tracking algorithms are restricted to front facing viewpoint, where a viewer would only be able to see the back side of the main subject in the video - but this doesn’t exploit the excellent maneuverability of a drone. For example, imagine a snowboard preparing for a ramp trick, and switching the drone camera’s viewpoint so that it gets a side shot of the trick in mid air. The subject of the video could control the video without the use of a physical transmitter.</p>
+
+<h2 id="project-description">Project Description</h2>
+
+<p>FlyWave was designed to provide autonomous control of a quadcopter using only arm gestures. Using machine learning, the drone is able classify different arm gestures presented by the subject of the video through the camera. Each classified gesture corresponds to a different movement by the drone, whether it be a rotation to the side of a user, a land signal, or even a flip. The programmatic manipulation of the drone is streamlined by using a Parrot Bebop 2, a commercial drone with a programmatic interface to the camera and drone movement controls.</p>
+
+<h2 id="system-design">System Design</h2>
+
+<h4 id="image-processing">Image Processing</h4>
+<p>Before feeding the image data into a machine learning model, the images need to be processed in such a way to make it easier for the model to extract and detect features. In our case, these features are the arm gestures the person in the video stream makes. The first step we take is converting our image from RGB to grayscale in order to reduce the dimensionality of our model input. We then use Gaussian blurring and thresholding to further emphasize the features in our image.</p>
+
+<p><span class="image main"><img src="/../../images/projects/flywave/processing.png" alt="" /></span></p>
+
+<h4 id="parrot-bebop">Parrot Bebop</h4>
+
+<p><span class="image right"><img src="/../../images/projects/flywave/bebop.jpg" alt="" /></span></p>
+
+<p>The Parrot Bebop provides a programmatic interface that streamlined the process of automating flight and vision tasks. Using the PyParrot open source library, we could connect to the Bebop drone via WiFi, stream and process images through its camera feed, and send it commands to control the drone’s movement.</p>
+
+<h2 id="deep-learning">Deep Learning</h2>
+<p>To final step to the challenge was actually developing a model to accurately classify arm gestures. While researching how to approach the task, our team determined that approaching the problem with deep learning would be the best use of our available resources. We compared various architectures to determine the best suited model for the task.</p>
+
+<h4 id="cascade-object-classifier">Cascade Object Classifier</h4>
+<p>Cascade object classifiers are based around the concatenation of several different classifiers. What this means is that we arrange multiple classifiers in series and use all the information from each classifier’s output as additional info in the next classifier. Cascade classifiers work well in determining common features between a set of images.</p>
+
+<h4 id="convolutional-neural-networks">Convolutional Neural Networks</h4>
+<p>A convolutional neural network takes advantage of the spatial information in images, learning higher level abstractions in deeper layers of the network. This model was useful for our particular classification problem because it successfully was able to learn the differences between the arm gestures from the labeled training data.</p>
+
+<p><span class="image main"><img src="/../../images/projects/flywave/conv.png" alt="" /></span></p>
+
+<h4 id="capsule-networks">Capsule Networks</h4>
+<p>Capsule networks are similar to convolutional neural networks in that they take advantage of the spatial data in images. However, one huge improvement it has over a CNN is that it is rotation invariant - a image that has undergone several translations will still be able to be detected by a capsule network.</p>
+
+<p><span class="image main"><img src="/../../images/projects/flywave/caps.png" alt="" /></span></p>
+
+<h2 id="challenges">Challenges</h2>
+<ul>
+  <li>
+    <p><strong>Preprocessing:</strong> We tried a variety of preprocessing methods to try and isolate the different gestures from the person’s surroundings. However, often times the preprocessing would lead to parts of the gesture being removed. There were also instances where the background was not fully removed either.</p>
+  </li>
+  <li>
+    <p><strong>Gesture Detection:</strong> We initially tried to use a Haar Cascade Classifier in order to detect different hand features in the image frame, but the OpenCV implementation had some bugs in the source code which prevented us from training the classifier. We tried to fix the source code manually and recompile OpenCV, but the compilation repeatedly failed. We then tried using MATLAB’s implementation, but we realized that the MATLAB classifier was not compatible with Python. It also required us to manually select the region of interest in over a thousand distinct images. We eventually ended up modifying an existing implementation in Tensorflow.</p>
+  </li>
+  <li>
+    <p><strong>Training:</strong> Training the classifier is a very expensive process, and since we did not have access to a GPU, this process was very slow.</p>
+  </li>
+  <li>
+    <p><strong>Overfitting:</strong> We realized that after training the classifier, we were getting 100% accuracy on classification, which seemed to imply that our model was overfitting the data we gave to it, though it is possible that our preprocessing did most of the heavy lifting in detecting relevant features in the image. We could have benefitted from more recording sessions.</p>
+  </li>
+</ul>
+
+<h2 id="results">Results</h2>
+
+<p>FlyWave required us to test out many different algorithms for image classification as well as for processing our images to make it easier for our classifier to learn features of the image. While we weren’t able to remove the background completely, our neural network was still successful in accurately distinguish the different gestures. The gestures that we trained on were: holding an arm angled upward and pointing outward for each side. Each of these mapped to a different action, such as arcing to the left or right, pitching up or down, and landing. While tests in the environment we were in were successful, our model likely learned features in the image that we did not intend it to such as trees and grass in the background, potentially causing the model to overfit to this particular environment. However, the FlyWave drone was overall successful in its image classification and controls.</p>
+
+ 
+
+	<hr>
+	<a href="/projects.html" class="button">Projects</a>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<ul class="icons">
+				<li><a target="_blank" href="https://join.slack.com/t/uavsatberkeley/signup" class="icon style2 fa-slack"><span class="label">Slack</span></a></li>
+				<li><a target="_blank" href="https://www.facebook.com/UAVsAtBerkeley/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a target="_blank" href="https://www.youtube.com/channel/UCdf9B_VJczebLHh9TooNBdA" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/uavsatberkeley/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a target="_blank" href="https://twitter.com/uavsatberkeley?lang=en" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a target="_blank" href="https://github.com/UAVs-at-Berkeley" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/company/uavsatberkeley/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a target="_blank" href="mailto:admin@uav.berkeley.edu" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</section>
+		<ul class="copyright">
+			<li>&copy; 2021 UAVs@Berkeley</li>
+			<li>Based on a design by <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+			<li>Jekyll integration by <a target="_blank" href="https://github.com/andrewbanchich">Andrew Banchich</a></li>
+		</ul>
+		<ul class="copyright">
+			<li><a class="copyright"  href="https://www.ocf.berkeley.edu">    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg" alt="Hosted by the OCF" style="border: 0;" /></a></li>
+			<li><p class="copyright">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

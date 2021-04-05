@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PID Testing Stand</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Project Manager/Author: Joey Kroeger">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#000a43">
+	<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#d5eef7">
+	<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/assets/css/main.css ">
+    <link rel="canonical" href="/2017/12/01/pid.html">
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+			<a href="/" class="logo">
+				<span class="symbol">
+					<img src="/images/logo.png" alt="" />
+				</span>
+			</a>
+			<p>If you are interested in joining UAVs@Berkeley for Spring 2021, please send an email to officers@uav.berkeley.edu</p>
+
+			<!-- Custom Nav -->
+			<div class="topnav">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/teams.html">Teams</a></li>
+					<li><a href="/projects.html">Projects</a></li>
+					<li><a href="/leadership.html">Leadership</a></li>
+					<li><a href="/join.html">Join</a></li>
+					<li><a href="/calendar.html">Calendar</a></li>
+					<li><a href="/sponsors.html">Sponsors</a></li>
+					<li><a href="/campus.html">UAVs on Campus</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Nav -->
+			<!-- <nav id="nav">
+			    <ul>
+			      <li class="special">
+			        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+			        <div id="menu">
+			          <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="teams.html">Teams</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="leadership.html">Leadership</a></li>
+						<li><a href="join.html">Join</a></li>
+						<li><a href="calendar.html">Calendar</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="campus.html">UAVs on Campus</a></li>
+						<li><a href="contact.html">Contact</a></li>
+			          </ul>
+			        </div>
+			      </li>
+			    </ul>
+			  </nav>
+		</div> -->
+
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+
+    <h1>PID Testing Stand</h1>  <p><strong>Project Manager/Author: Joey Kroeger</strong></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>A PID controller is a complex controller that combines Proportional, Integral, and Derivative action to stabilize a quadcopter while in flight. Each axis has its own set of PIDs which means the ull PID controller has 9 different values. Many of these values are coupled to each other between different axes. These controllers are implemented in the flight controller firmware and don’t necessarily work right out of the box. This means that in order to achieve ideal flight performance all 9 of these values might have to be adjusted.</p>
+
+<h2 id="project-description">Project Description</h2>
+
+<p>Due to the complexity of the controller. It is often hard to teach people how to properly tune a PID controller. The process is often very hand-wavy and subjective.In order to help overcome this hurdle. The PID tuning stand was developed to simplify the process. The PID tuning stand is isolated to the Roll axis. Which narrows down the controller to 3 values. To further simplify the process the stand is mounted so that people can clearly see how changing the values affects the tracking performance of the vehicle.</p>
+
+<h2 id="design">Design</h2>
+
+<p>The PID stand uses a classical seesaw design to mount a custom quadcopter frame. This farme uses two motors that are located on the roll axis of the vehicle. This frame is attached to two support structures with embedded ball-bearings to allow for low friction rotation.</p>
+
+<h2 id="hardware">Hardware</h2>
+<ul>
+  <li>2 x Emax 2306 2300kv motors</li>
+  <li>2 x DYS sn20a ESCs</li>
+  <li>Naze 32 Rev 6b Flight controller</li>
+  <li>SBUS x4r radio Receiver</li>
+  <li>Custom 1/4in Plywood frame</li>
+</ul>
+
+<h2 id="results">Results</h2>
+
+<p>The stand performs as designed. The x4r receiver can easily be bound to any SBUS compatible transmitter and changing the roll axis stick input is accurately tracked by the stand. The FC is currently configured to angle mode which means with no attitude input the quad will automatically keep itself parallel to the floor. The PIDs can be easily changed with the Betaflight configurator by connecting to the flight controller’s micro USB port. Adjusting the PIDs gives expected results, ex. High frequency oscillations for too much proportional action.</p>
+
+ 
+
+	<hr>
+	<a href="/projects.html" class="button">Projects</a>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<section>
+			<ul class="icons">
+				<li><a target="_blank" href="https://join.slack.com/t/uavsatberkeley/signup" class="icon style2 fa-slack"><span class="label">Slack</span></a></li>
+				<li><a target="_blank" href="https://www.facebook.com/UAVsAtBerkeley/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a target="_blank" href="https://www.youtube.com/channel/UCdf9B_VJczebLHh9TooNBdA" class="icon style2 fa-youtube"><span class="label">YouTube</span></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/uavsatberkeley/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a target="_blank" href="https://twitter.com/uavsatberkeley?lang=en" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a target="_blank" href="https://github.com/UAVs-at-Berkeley" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/company/uavsatberkeley/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a target="_blank" href="mailto:admin@uav.berkeley.edu" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</section>
+		<ul class="copyright">
+			<li>&copy; 2021 UAVs@Berkeley</li>
+			<li>Based on a design by <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+			<li>Jekyll integration by <a target="_blank" href="https://github.com/andrewbanchich">Andrew Banchich</a></li>
+		</ul>
+		<ul class="copyright">
+			<li><a class="copyright"  href="https://www.ocf.berkeley.edu">    <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg" alt="Hosted by the OCF" style="border: 0;" /></a></li>
+			<li><p class="copyright">We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.</p></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
